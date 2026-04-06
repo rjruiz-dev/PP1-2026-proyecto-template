@@ -22,6 +22,8 @@
 
 > **"Use this template" no es un fork.** Crea un repo nuevo con esta estructura pero sin historial de commits. Tu repo arranca limpio.
 
+> **Un solo integrante del grupo** realiza los pasos 1 a 5. Los demás integrantes clonan el repo después (paso 2) una vez que los datos del grupo ya estén subidos. Esto evita conflictos.
+
 ### Paso 1 — Crear tu repo a partir del template
 
 1. Entrá a [PP1-2026-proyecto-template](https://github.com/rjruiz-dev/PP1-2026-proyecto-template)
