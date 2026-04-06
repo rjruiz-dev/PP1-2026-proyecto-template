@@ -94,3 +94,62 @@ La estrategia de ramas evoluciona con las entregas:
 | 3 y 4 (código) | Crear ramas `feature/nombre-descriptivo` y mergear a `main` | El código requiere revisión antes de integrar |
 
 - `main` es siempre la versión estable y entregable del proyecto
+
+## Herramientas recomendadas
+
+### Editor
+
+Usar **Visual Studio Code** (VSCode) para editar los archivos `.md` del proyecto.
+
+Extensiones sugeridas (instalar desde el panel de extensiones de VSCode):
+
+| Extensión | Para qué sirve |
+|-----------|---------------|
+| **Markdown Preview Enhanced** | Vista previa en tiempo real: ven las tablas y el formato renderizado al lado del código |
+| **Markdown Table** | Formatea tablas automáticamente con Tab y las mantiene alineadas |
+
+**Cómo usarlas**: abrir el archivo `.md` en VSCode → `Ctrl + Shift + V` para abrir la vista previa → editar a la izquierda, ver el resultado a la derecha.
+
+## Trabajo en equipo — Entrega 1
+
+La Entrega 1 es un único archivo (`docs/entrega-1-analisis.md`). Para evitar conflictos de Git cuando trabajan en equipo, sigan esta organización:
+
+### Paso 1 — Reunión inicial (todos juntos)
+
+Antes de escribir nada, el grupo se reúne y define en conjunto:
+- Los **actores** del sistema
+- Los **flujos principales** (qué hace el sistema, para quién)
+- Boceto de las **historias de usuario** principales
+
+Esta discusión es grupal porque todos necesitan entender el dominio completo. Puede ser presencial o por llamada.
+
+### Paso 2 — Dividir las actividades
+
+Cada integrante se encarga de una o más secciones. Ejemplo para un grupo de 4:
+
+| Integrante | Sección asignada |
+|-----------|-----------------|
+| Integrante 1 | Actores + Historias de Usuario |
+| Integrante 2 | Requisitos Funcionales + Requisitos No Funcionales |
+| Integrante 3 | Diagrama de Casos de Uso |
+| Integrante 4 | Especificaciones de Casos de Uso |
+
+> Esta división es una sugerencia. Lo importante es que **cada persona sea responsable de una parte concreta** y que **todos participen**.
+
+### Paso 3 — Editar sin conflictos
+
+Como todos editan el mismo archivo, sigan esta regla simple:
+
+```
+SIEMPRE antes de editar:    git pull
+SIEMPRE después de editar:  git add, commit, push
+```
+
+**No editen al mismo tiempo.** Coordinen por grupo de WhatsApp o similar: "voy a editar la sección de RF" → edita → pushea → "listo, ya pueden editar".
+
+### Paso 4 — Revisión cruzada
+
+Antes de entregar, cada integrante revisa la sección de **otro** compañero (no la propia). Verificar:
+- ¿Los RF referencian HU que existen? (trazabilidad RF → HU)
+- ¿Los casos de uso coinciden con el diagrama?
+- ¿Las historias de usuario cubren a todos los actores?
