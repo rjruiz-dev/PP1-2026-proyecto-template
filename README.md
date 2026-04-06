@@ -20,25 +20,40 @@
 
 ## Cómo usar este template
 
-1. Ir al repo template: [PP1-2026-proyecto-template](https://github.com/rjruiz-dev/PP1-2026-proyecto-template)
-2. Click en **"Use this template"** → **"Create a new repository"**
-3. Configurar:
+> **"Use this template" no es un fork.** Crea un repo nuevo con esta estructura pero sin historial de commits. Tu repo arranca limpio.
+
+### Paso 1 — Crear tu repo a partir del template
+
+1. Entrá a [PP1-2026-proyecto-template](https://github.com/rjruiz-dev/PP1-2026-proyecto-template)
+2. Hacé click en el botón verde **"Use this template"** → **"Create a new repository"**
+3. Completá:
    - **Owner**: tu cuenta personal de GitHub
-   - **Nombre del repo**: seguir la convención `PP1-2026-grupoX` (ejemplo: `PP1-2026-grupo1`)
-   - **Visibilidad**: Public
+   - **Repository name**: `PP1-2026-grupoX` (reemplazá X por tu número de grupo, ejemplo: `PP1-2026-grupo1`)
+   - **Visibilidad**: **Public**
 4. Click en **"Create repository"**
-5. Clonar el repo en tu máquina:
-   ```bash
-   git clone https://github.com/TU-USUARIO/PP1-2026-grupoX.git
-   ```
-6. Completar los datos del grupo en este README
-7. Agregar a todos los integrantes como **collaborators**: Settings → Collaborators → Add people
-8. Primer commit:
-   ```bash
-   git add .
-   git commit -m "docs: completar datos del grupo"
-   git push
-   ```
+
+### Paso 2 — Clonar e inicializar
+
+```bash
+git clone https://github.com/TU-USUARIO/PP1-2026-grupoX.git
+cd PP1-2026-grupoX
+```
+
+### Paso 3 — Completar datos del grupo
+
+Editá este `README.md`: reemplazá los campos entre corchetes `[...]` de arriba con los datos reales de tu grupo (nombre, proyecto elegido, integrantes).
+
+### Paso 4 — Agregar a los integrantes como collaborators
+
+En GitHub: **Settings** → **Collaborators** → **Add people** → agregar a cada integrante por su usuario de GitHub.
+
+### Paso 5 — Primer commit
+
+```bash
+git add .
+git commit -m "docs: completar datos del grupo"
+git push
+```
 
 ## Entregas
 
@@ -69,5 +84,11 @@ Usar [Conventional Commits](https://www.conventionalcommits.org/):
 
 ### Ramas
 
-- `main` — rama principal, siempre funcional
-- Crear ramas para features: `feature/nombre-descriptivo`
+La estrategia de ramas evoluciona con las entregas:
+
+| Entregas | Estrategia | ¿Por qué? |
+|----------|-----------|-----------|
+| 1 y 2 (documentación) | Trabajar directo en `main` | Son archivos `.md`, no hay riesgo de romper nada |
+| 3 y 4 (código) | Crear ramas `feature/nombre-descriptivo` y mergear a `main` | El código requiere revisión antes de integrar |
+
+- `main` es siempre la versión estable y entregable del proyecto
