@@ -13,9 +13,11 @@
 ## Estructura del repositorio
 
 ```
-├── docs/        → Entregas y documentación del proyecto
-├── frontend/    → Código del frontend (HTML, CSS, JS)
-└── backend/     → Código del backend (Spring Boot)
+├── docs/                        → Entregas y documentación del proyecto
+│   ├── entrega-1-analisis.md    → Consigna de la Entrega 1
+│   └── rubrica-entrega-1.md     → Rúbrica de evaluación de la Entrega 1
+├── frontend/                    → Código del frontend (HTML, CSS, JS)
+└── backend/                     → Código del backend (Spring Boot)
 ```
 
 ## Cómo usar este template
@@ -45,9 +47,11 @@ cd PP1-2026-grupoX
 
 Editá este `README.md`: reemplazá los campos entre corchetes `[...]` de arriba con los datos reales de tu grupo (nombre, proyecto elegido, integrantes).
 
-### Paso 4 — Agregar a los integrantes como collaborators
+### Paso 4 — Agregar collaborators
 
-En GitHub: **Settings** → **Collaborators** → **Add people** → agregar a cada integrante por su usuario de GitHub.
+En GitHub: **Settings** → **Collaborators** → **Add people**:
+- Agregar a **cada integrante** del grupo por su usuario de GitHub
+- Agregar al **docente**: `rjruiz-dev` (con rol **Write** — necesario para subir rúbricas, consignas y revisar avances)
 
 ### Paso 5 — Primer commit
 
@@ -63,7 +67,7 @@ Todas las entregas de documentación se encuentran en la carpeta `docs/`.
 
 | Entrega | Archivo | Fecha límite |
 |---------|---------|-------------|
-| Entrega 1 — Análisis del sistema | [`docs/entrega-1-analisis.md`](docs/entrega-1-analisis.md) | 30/04/2026 |
+| Entrega 1 — Análisis del sistema | [`docs/entrega-1-analisis.md`](docs/entrega-1-analisis.md) · [`rúbrica`](docs/rubrica-entrega-1.md) | 30/04/2026 |
 | Entrega 2 — Diseño de interfaces | `docs/entrega-2-diseno.md` | 25/06/2026 |
 | Entrega 3 — Frontend codificado | Carpeta `frontend/` | 03/09/2026 |
 | Entrega 4 — Backend funcional | Carpeta `backend/` | 15/10/2026 |
