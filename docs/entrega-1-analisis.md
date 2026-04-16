@@ -44,23 +44,22 @@
 
 ## 6. Especificación de Casos de Uso
 
-### CU-01: [Nombre del caso de uso]
+### CU-01 — [Nombre del caso de uso]
 
 | Campo | Detalle |
-|-------|---------|
+|---|---|
 | **Actor principal** | |
 | **Descripción** | |
 | **Precondiciones** | |
-| **Postcondiciones** | |
+| **Postcondiciones (criterios de aceptación)** | |
 
-**Flujo principal:**
-1. ...
-2. ...
-3. ...
-
-**Flujos alternativos:**
-- **FA-01**: ...
+| Secuencia Normal (Camino feliz) | Excepciones / Alternativas |
+|---|---|
+| 1.  |  |
+| 2.  |  |
+| 3.  |  |
 
 ---
 
-> Repetir la especificación para cada caso de uso del diagrama.
+> Repetir la ficha completa para cada caso de uso del diagrama.
+> Las excepciones se numeran ligadas al paso del que se desvían (ej: 4.1 en la misma fila que el paso 4).

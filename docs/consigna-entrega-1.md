@@ -79,17 +79,20 @@ Diseñar un diagrama de casos de uso (UML) que represente:
 
 ### 6. Especificación de Casos de Uso
 
-Para cada caso de uso del diagrama, completar una especificación con los siguientes campos:
+Para cada caso de uso del diagrama, completar una ficha con los siguientes campos:
 
 | Campo | Descripción |
 |-------|-------------|
-| **Nombre** | Nombre del caso de uso (debe coincidir con el diagrama) |
+| **ID + Nombre** | Identificador único (CU-01, CU-02...) y nombre del caso de uso (debe coincidir con el diagrama) |
 | **Actor principal** | Actor que inicia la interacción |
 | **Descripción** | Resumen breve de qué hace este caso de uso |
 | **Precondiciones** | Qué debe ser verdadero antes de que comience |
-| **Postcondiciones** | Qué es verdadero después de que termina exitosamente |
-| **Flujo principal** | Secuencia de pasos numerada del camino exitoso |
-| **Flujos alternativos** | Variantes o excepciones al flujo principal |
+| **Postcondiciones (criterios de aceptación)** | Qué es verdadero después de que termina exitosamente |
+
+El **flujo** se documenta en una tabla paralela de dos columnas:
+
+- **Secuencia Normal (Camino feliz)**: pasos numerados (1, 2, 3...) del camino exitoso. Cada paso indica QUIÉN hace QUÉ (actor o sistema).
+- **Excepciones / Alternativas**: flujos alternativos numerados **ligados al paso del que se desvían** (ej: 4.1 es una excepción del paso 4, 5.1 del paso 5). Se escriben en la misma fila que el paso al que corresponden.
 
 ---
 
