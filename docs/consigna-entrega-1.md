@@ -113,14 +113,18 @@ No se aceptan entregas en otro formato. El archivo `entrega-1-analisis.md` ya ti
 
 Usar **Visual Studio Code** (VSCode) para editar los archivos `.md` del proyecto.
 
-Extensiones sugeridas (instalar desde el panel de extensiones de VSCode):
+Extensión imprescindible (instalar desde el panel de extensiones de VSCode):
 
 | Extensión | Para qué sirve |
 |-----------|---------------|
-| **Markdown Preview Enhanced** | Vista previa en tiempo real: ven las tablas y el formato renderizado al lado del código |
-| **Markdown Table** | Formatea tablas automáticamente con Tab y las mantiene alineadas |
+| **Markdown All in One** | Tab navega entre celdas de una tabla, auto-formato al guardar, atajos de negrita/cursiva, preview con `Ctrl+Shift+V`. |
 
-**Cómo usarlas**: abrir el archivo `.md` en VSCode → `Ctrl + Shift + V` para abrir la vista previa → editar a la izquierda, ver el resultado a la derecha.
+**Cómo trabajar las tablas sin sufrir**:
+
+- `Ctrl + Shift + V` → abre la vista previa renderizada al lado del código.
+- **Tab** dentro de una celda → salta a la siguiente celda (como en Excel).
+- **Enter** en la última celda de una fila → agrega una fila nueva automáticamente.
+- **Ctrl + S** (guardar) → la extensión alinea todos los `|` sola. **No los alineen a mano.**
 
 ---
 
