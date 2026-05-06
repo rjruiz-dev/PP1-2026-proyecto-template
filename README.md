@@ -13,12 +13,24 @@
 ## Estructura del repositorio
 
 ```
-├── docs/                        → Entregas y documentación del proyecto
-│   ├── entrega-1-analisis.md    → Consigna de la Entrega 1
-│   └── rubrica-entrega-1.md     → Rúbrica de evaluación de la Entrega 1
-├── frontend/                    → Código del frontend (HTML, CSS, JS)
-└── backend/                     → Código del backend (Spring Boot)
+├── docs/                        → Documentación de entregas (consignas, rúbricas, diseño)
+│   ├── 1er-entrega/             → Análisis del sistema (Bloque 1, entrega 30/04)
+│   │   ├── consigna.md
+│   │   ├── analisis.md          → Plantilla a completar por el grupo
+│   │   ├── rubrica.md
+│   │   └── guia-trabajo.png
+│   ├── 2da-entrega/             → Diseño de interfaces (Bloque 2, entrega 25/06)
+│   │   ├── consigna.md
+│   │   ├── rubrica.md
+│   │   ├── README.md            → Inventario de pantallas + trazabilidad
+│   │   └── wireframes/          → PNGs de Excalidraw (uno por pantalla)
+│   ├── 3er-entrega/             → Frontend codificado (Bloque 3, entrega 03/09)
+│   └── 4ta-entrega/             → Backend funcional (Bloque 4, entrega 15/10)
+├── frontend/                    → Código del sitio (HTML + CSS + JS desde Bloque 2)
+└── backend/                     → Código del backend (Spring Boot + JPA + MySQL desde Bloque 4)
 ```
+
+**Convención**: `docs/` lleva los artefactos de **diseño y documentación** (markdown, PNGs). `frontend/` lleva el **código del sitio web** (HTML, CSS, JavaScript). `backend/` lleva el **código del servidor** (Java + Spring Boot). Los wireframes son artefactos de diseño → viven en `docs/2da-entrega/wireframes/`. Los HTMLs son código → viven en raíz de `frontend/`.
 
 ## Cómo usar este template
 
@@ -63,14 +75,12 @@ git push
 
 ## Entregas
 
-Todas las entregas de documentación se encuentran en la carpeta `docs/`.
-
-| Entrega | Archivo | Fecha límite |
-|---------|---------|-------------|
-| Entrega 1 — Análisis del sistema | [`docs/entrega-1-analisis.md`](docs/entrega-1-analisis.md) · [`rúbrica`](docs/rubrica-entrega-1.md) | 30/04/2026 |
-| Entrega 2 — Diseño de interfaces | `docs/entrega-2-diseno.md` | 25/06/2026 |
-| Entrega 3 — Frontend codificado | Carpeta `frontend/` | 03/09/2026 |
-| Entrega 4 — Backend funcional | Carpeta `backend/` | 15/10/2026 |
+| Entrega | Ubicación | Fecha límite |
+|---------|-----------|-------------|
+| Entrega 1 — Análisis del sistema | [`docs/1er-entrega/`](docs/1er-entrega/) | 30/04/2026 |
+| Entrega 2 — Diseño de interfaces | [`docs/2da-entrega/`](docs/2da-entrega/) (consigna, rúbrica, wireframes) + [`frontend/`](frontend/) (HTMLs + CSS) | 25/06/2026 |
+| Entrega 3 — Frontend codificado | [`frontend/`](frontend/) (con JavaScript) + [`docs/3er-entrega/`](docs/3er-entrega/) | 03/09/2026 |
+| Entrega 4 — Backend funcional | [`backend/`](backend/) + [`docs/4ta-entrega/`](docs/4ta-entrega/) | 15/10/2026 |
 
 Cada entrega se sube a **Moodle** como link al repositorio.
 
@@ -94,8 +104,7 @@ La estrategia de ramas evoluciona con las entregas:
 
 | Entregas | Estrategia | ¿Por qué? |
 |----------|-----------|-----------|
-| 1 y 2 (documentación) | Trabajar directo en `main` | Son archivos `.md`, no hay riesgo de romper nada |
-| 3 y 4 (código) | Crear ramas `feature/nombre-descriptivo` y mergear a `main` | El código requiere revisión antes de integrar |
+| 1 y 2 (análisis + diseño) | Trabajar directo en `main` | Documentación + HTML/CSS estático, bajo riesgo de romper |
+| 3 y 4 (código JS y backend) | Crear ramas `feature/nombre-descriptivo` y mergear a `main` | El código con lógica requiere revisión antes de integrar |
 
 - `main` es siempre la versión estable y entregable del proyecto
-
