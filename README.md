@@ -14,6 +14,7 @@
 
 ```
 ├── docs/                        → Documentación de entregas (consignas, rúbricas, diseño)
+│   ├── modelo-de-datos.md       → El contrato de datos. Lo entrega la cátedra en el Bloque 3
 │   ├── 1er-entrega/             → Análisis del sistema (Bloque 1, entrega 30/04)
 │   │   ├── consigna.md
 │   │   ├── analisis.md          → Plantilla a completar por el grupo
@@ -25,9 +26,14 @@
 │   │   ├── README.md            → Inventario de pantallas + trazabilidad
 │   │   └── wireframes/          → PNGs de Excalidraw (uno por pantalla)
 │   ├── 3er-entrega/             → Frontend codificado (Bloque 3, entrega 03/09)
+│   │   ├── consigna.md
+│   │   ├── rubrica.md
+│   │   └── README.md            → Tabla de capacidades + datos + decisiones
 │   └── 4ta-entrega/             → Backend funcional (Bloque 4, entrega 15/10)
-├── frontend/                    → Código del sitio (HTML + CSS + JS desde Bloque 2)
-└── backend/                     → Código del backend (Spring Boot + JPA + MySQL desde Bloque 4)
+├── frontend/                    → Código del sitio (HTML + CSS desde B2, JS y datos desde B3)
+│   ├── assets/{css,img,js}/
+│   └── data/
+└── backend/                     → Código del servidor (Spring Boot + JPA + MySQL desde Bloque 4)
 ```
 
 **Convención**: `docs/` lleva los artefactos de **diseño y documentación** (markdown, PNGs). `frontend/` lleva el **código del sitio web** (HTML, CSS, JavaScript). `backend/` lleva el **código del servidor** (Java + Spring Boot). Los wireframes son artefactos de diseño → viven en `docs/2da-entrega/wireframes/`. Los HTMLs son código → viven en raíz de `frontend/`.
@@ -104,7 +110,7 @@ La estrategia de ramas evoluciona con las entregas:
 
 | Entregas | Estrategia | ¿Por qué? |
 |----------|-----------|-----------|
-| 1 y 2 (análisis + diseño) | Trabajar directo en `main` | Documentación + HTML/CSS estático, bajo riesgo de romper |
-| 3 y 4 (código JS y backend) | Crear ramas `feature/nombre-descriptivo` y mergear a `main` | El código con lógica requiere revisión antes de integrar |
+| 1, 2 y 3 (análisis, diseño y frontend) | Trabajar directo en `main` | Documentación, HTML/CSS y JavaScript de una sola pantalla por vez: bajo riesgo de pisarse |
+| 4 en adelante (backend) | Crear ramas `feature/nombre-descriptivo` y mergear a `main` | Frontend y backend avanzan en paralelo, y ahí las ramas empiezan a resolver un problema real |
 
 - `main` es siempre la versión estable y entregable del proyecto
